@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --warna1: #191919;
+  --warna2: #f58a07;
+  --warna3: #f7f5fb;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  background-color: var(--warna1);
+}
+.logo{
+  box-sizing: border-box;
+}
+.logo img {
+  padding: 2px;
+  width: 120px;
+}
+.nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  padding: 10px 30px;
+  background-color: var(--warna1);
+  position: fixed;
+  z-index: 11111;
+  box-sizing: border-box;
+  box-shadow: -2px 2px 24px -5px var(--warna21);
+  -webkit-box-shadow: -2px 2px 24px -5px var(--warna1);
+  -moz-box-shadow: -2px 2px 24px -5px var(--warna1);
+}
+.navbar-nav {
+  margin-top: 15px;
+}
+.navbar-nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--warna3);
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  padding: 8px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav ul li:hover {
+  transform: scale(1.1);
+}
+.nav ul li a:hover {
+  color: var(--warna2);
+}
+.next :hover {
+  transform: scale(1.1);
+}
+.cari {
+  background-color: var(--warna3);
+  padding: 10px 10px;
+  margin: auto 0;
+  border-radius: 30px;
+  display: flex;
+  box-sizing: border-box;
+}
+.cari input i {
+  border: none;
+}
+.cari input {
+  border: none;
+  margin-left: 10px;
+  background-color: var(--warna3);
+}
+.cari input:focus {
+  outline: none;
+  border: none;
+}
+.container {
+  width: 100%;
+  height: 100px;
+  margin-top: 200px;
+}
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top: 4px solid var(--warna2);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite; /* Menerapkan animasi */
+  margin: 20px auto;
+}
+.server {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--warna3);
+}
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--warna2);
+  border-radius: 5px;
+  padding: 2px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: var(--warna3);
+}
+.back a {
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-nav {
+    display: none;
+  }
+}
